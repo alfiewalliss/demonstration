@@ -22,7 +22,7 @@ func TestUnitFactorial(t *testing.T) {
 
 	for _, test := range tests {
 		/* act */
-		v := Factorial(tesxt.n)
+		v := Factorial(test.n)
 		/* assert */
 		assert.Equal(test.result, v)
 	}
