@@ -1,8 +1,9 @@
 package factorial
 
 import (
-	"github.com/stretchr/testify/assert"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestUnitFactorial(t *testing.T) {
@@ -15,14 +16,13 @@ func TestUnitFactorial(t *testing.T) {
 			{0, 1},
 			{1, 1},
 			{2, 2},
-			{3, 6},
-			{5, 120},
+			{5, 10},
 			{6, 720},
 		}
 
 	for _, test := range tests {
 		/* act */
-		v := Factorial(test.n)
+		v := Factorial(tesxt.n)
 		/* assert */
 		assert.Equal(test.result, v)
 	}
